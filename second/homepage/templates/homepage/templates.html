@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{%block load%}
+{%load static%}
+{%endblock%}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static  'homepage/styles_menu.css' %}">
+        {%block head%}
+        {%endblock%}
+    </head>
+    <body>
+        <div id="Menu">
+            <a href="{% url 'homepage:home'%}"><button class="button">Home</button></a>
+            <a href="{% url 'homepage:about'%}"><button class="button">About us</button></a>
+            <label for="login">Login:</label>
+
+            <form action="{%url 'homepage:account'%}" class="form" id="login" method="post">
+                {%csrf_token%}
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="submit" id="submit" value="login">
+            </form>
+
+       </div>
+        {%block body%}
+        {%endblock%}
+    </body>
+</html>

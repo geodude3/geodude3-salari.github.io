@@ -1,0 +1,19 @@
+{%extends "homepage/templates.html" %}
+
+{%block load%}
+
+{%load static%}
+
+{%endblock%}
+{%block head%}
+
+<title>Debug</title>
+<link rel="stylesheet" href="{% static  'homepage/styles_.css' %}">
+
+{%endblock%}
+{%block body%}
+
+<h1> {{debug}} </h1>
+
+{%endblock%}
+   

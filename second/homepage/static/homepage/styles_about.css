@@ -1,0 +1,49 @@
+body{
+    font-family: Courier;
+}
+
+.titles{
+    color: orange;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+     
+}
+
+#aboutFamily{
+    color:rgb(179, 44, 44);
+    margin-top: 20px;
+    margin-bottom: 40px; 
+}
+#presenting{
+    font-size: 30px;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+#children{
+    display: flex;
+    flex-wrap: wrap;
+    border-style: dotted ;
+    border-color: orchid;
+    
+    
+}
+#child{
+    font-size: 16px;
+    overflow-wrap: break-word;  
+    padding: 20px;
+    margin: 20px;
+    background-color: orchid;
+    width: 350px
+    
+}
+img{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+

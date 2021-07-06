@@ -1,0 +1,49 @@
+{%extends "homepage/templates.html" %}
+
+{%block load%}
+
+{%load static%}
+
+{%endblock%}
+{%block head%}
+
+<title>About</title>
+<link rel="stylesheet" href="{% static 'homepage/styles_about.css'%}">
+
+
+{%endblock%}
+{%block body%}
+
+<h1 id="PageTitle">About us.</h1>
+
+<div class="titles">
+    <div id="aboutFamily">The Salari family lives in West Vancouver BC CANADA. We are part French and part German. Our family lives all over the world in places like:
+        <ul>
+            <li>Moroni, Comores</li>
+            <li>Paris, France</li>
+            <li>Hambourg, Deutschland</li>
+            <li>and Vancouver, Canada</li>
+        </ul>
+        We are pround of who we are and what we stand for.
+    </div>
+    <div id="presenting">The Salari family has 3 children, let's meet them!</div>
+</div>
+
+<div id="children">
+    <div id="child">
+        <img src="{% static '/homepage/Kiyan.jpeg' %}" alt="Kiyan" width="300px">
+        Kiyan is the youngest of the Salari family. He recently turned 8 on June 4th. He attends Cousteau School, the French international school of vancouver.
+    </div>
+    <div id="child">
+        <img src="{% static '/homepage/Inaya.JPG' %}" alt="Inaya" width="300px">
+        Inaya is the middle girl. She keeps the order (sometimes) and loves reading. She will turn 11 on September 2nd. She attends the same school as Kiyan and her favorite show is Paw Patrol.
+    </div>
+    <div id="child">
+        <img src="{% static '/homepage/Ihsan.JPG' %}" alt="Ihsan" width="300px">
+        Ihsan is the eldest child in the Salari family. He has been alive for a whopping 14yrs and will turn 15 on December 3rd. He attends Mulgrave school and hopes to perhaps become a computer scientist. 
+    </div>
+    
+</div>
+
+{%endblock%}
+   

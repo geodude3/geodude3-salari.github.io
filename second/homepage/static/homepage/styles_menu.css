@@ -1,0 +1,52 @@
+
+.button, form, label{
+    padding: 10px 30px;
+    margin: 20px 30px;
+    border: none;
+    font-size: 24px;
+    font-family: Courier;   
+    }
+#name{
+    background-color: orange;
+}
+#submit{
+    border: none;
+    font-family: Courier;  
+    background-color: orange;   
+}
+#submit:hover{background-color:darkorange;}
+.button{
+    background-color: orange;
+}
+.button:hover{
+    background-color:darkorange;
+}
+::placeholder{
+    color: black;
+}
+
+
+
+label{
+    margin-right:0px;
+    margin-left: 100px;
+    padding-right: 5px;
+}
+.form{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#Menu{
+    margin: 40px 0px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    background-color: lightcoral;
+}
+#PageTitle{
+    font-size: 60px;
+    color: rgb(179, 44, 44);
+    margin-top: 20px;
+    text-align: center;
+}

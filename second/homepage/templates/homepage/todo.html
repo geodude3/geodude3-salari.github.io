@@ -1,0 +1,37 @@
+{%extends "homepage/templates.html" %}
+
+{%block load%}
+
+{%load static%}
+
+{%endblock%}
+{%block head%}
+
+<title>Todo</title>
+<link rel="stylesheet" href="{% static  'homepage/styles_todo.css' %}">
+
+{%endblock%}
+{%block body%}
+<h1 id="PageTitle">To do.</h1>
+<ul>
+    {%for task in tasks%}
+        <li>
+            <div id="task_display">
+                
+                <form action="{%url 'homepage:delete'%}" method="post" >
+                {%csrf_token%}
+                    <h1>{{task}}
+                         <input type="hidden" id="nbr" name="nbr"  value="{{forloop.counter0}}">
+                         <input type="submit" class="delete" value="Delete">
+                    </h1>
+                </form>
+             </div>
+        </li>
+    {%empty%}
+        No tasks.
+    {%endfor%}
+
+</ul>
+<a href="{% url 'homepage:add'%}"><button class="button">Add task</button></a>
+{%endblock%}
+   

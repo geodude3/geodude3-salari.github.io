@@ -1,0 +1,23 @@
+{%extends "homepage/templates.html" %}
+
+{%block load%}
+
+{%load static%}
+
+{%endblock%}
+{%block head%}
+
+<title>Add task</title>
+<link rel="stylesheet" href="{% static  'homepage/styles_add.css' %}">
+
+{%endblock%}
+{%block body%}
+
+<form action="{%url 'homepage:todo'%}" class="form" id="login" method="post">
+    {%csrf_token%}
+    <input type="text" name="task" id="task" placeholder="Task" autofocus="autofocus">
+    <input type="submit" id="submit" value="Submit">
+</form>
+
+
+{%endblock%}

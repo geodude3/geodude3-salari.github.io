@@ -1,0 +1,32 @@
+{%extends "homepage/templates.html" %}
+
+{%block load%}
+
+{%load static%}
+
+{%endblock%}
+{%block head%}
+
+<title>My Account</title>
+<link rel="stylesheet" href="{% static  'homepage/styles_account.css' %}">
+
+{%endblock%}
+{%block body%}
+
+{% if status %}
+
+    <h1 id="PageTitle">Hello, {{Name}}.</h1>
+
+    <a href="{%url 'homepage:todo'%}"><button class="button">To do.</button></a>
+    <a href="{%url 'homepage:add'%}"><button class="button">Add task.</button></a>
+
+{% else%}
+    <h1 id="PageTitle">You are not logged in.</h1>
+{%endif%}
+
+
+
+
+
+{%endblock%}
+   
